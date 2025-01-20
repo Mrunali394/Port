@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: #0a0f23; /* Dark coding background */
+    color: #00ffff; /* Cyan for text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .glass-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3); /* Neon glow effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    z-index: 1000;
+    padding: 10px 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 20px;
+  }
+  
+  .def {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00ffff;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #e6f1ff;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background 0.3s, color 0.3s, text-shadow 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    background: rgba(0, 255, 255, 0.2); /* Light glass highlight on hover */
+    color: #00ffff; /* Bright neon effect */
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.8); /* Glowing text */
+    border: solid 2px aquamarine;
+  }
+  
+  /* Blog Page Container */
+  .blog-page {
+    width: 90%;
+    max-width: 800px;
+    background: #002b36; /* Dark cyan */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5); /* Cyan glow */
+  }
+  
+  /* Title and Subtitle */
+  .blog-title {
+    text-align: center;
+    color: #7fffd4; /* Aquamarine */
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    text-align: center;
+    color: #00cccc; /* Subtle cyan */
+    margin-bottom: 20px;
+  }
+  
+  /* Blog Tabs */
+  .blog-tabs {
+    border-top: 1px solid #004d61;
+  }
+  
+  .blog-tab {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #004d61;
+  }
+  
+  .tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #003543; /* Dark cyan for tabs */
+    color: #00ffff; /* Cyan text */
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .tab-header:hover {
+    background: #004d61;
+  }
+  
+  .tab-name {
+    font-weight: bold;
+  }
+  
+  .tab-date {
+    font-size: 0.9em;
+    color: #00cccc;
+  }
+  
+  .arrow {
+    transition: transform 0.3s;
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 10px;
+    background: #001f26; /* Slightly darker background for content */
+    color: #7fffd4; /* Aquamarine for content */
+  }
+  
+  .key {
+    color: #00ffff; /* Cyan keys */
+    font-weight: bold;
+  }
+  
+  a {
+    color: #00ffff; /* Cyan links */
+    text-decoration: underline;
+  }
+  

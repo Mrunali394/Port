@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Coding Notebook</title>
+  <link rel="stylesheet" href="./CSS/blog.css">
+</head>
+<body>
+  <!-- Glass Navbar -->
+  <nav class="glass-navbar">
+    <ul class="nav-links">
+        <li class="def"> > </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+  <div class="blog-page">
+    <h1 class="blog-title">My Blog</h1>
+    <p class="subtitle">// Sharing insights, experiences, and stories in code...</p>
+    
+    <div class="blog-tabs">
+      <!-- Blog Post 1 -->
+      <div class="blog-tab">
+        <div class="tab-header" onclick="toggleBlogContent(this)">
+          <span class="tab-name">📄 Spotify Clone: Journey to Perfection</span>
+          <span class="tab-date">[ Jan 10, 2025 ]</span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="tab-content">
+          <p><span class="key">Introduction:</span> Building the Spotify Clone was an incredible experience. I tackled front-end design challenges, API integration, and responsive layouts...</p>
+          <p><span class="key">Takeaway:</span> Designing scalable projects and enhancing UI/UX skills.</p>
+          <p><a href="https://your-blog-link.com" target="_blank">Read More</a></p>
+        </div>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div class="blog-tab">
+        <div class="tab-header" onclick="toggleBlogContent(this)">
+          <span class="tab-name">📄 Developing a Music App (In Progress)</span>
+          <span class="tab-date">[ Dec 20, 2024 ]</span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="tab-content">
+          <p><span class="key">Progress:</span> Currently working on the backend logic, exploring database integration, and setting up API endpoints for dynamic features...</p>
+          <p><span class="key">Goal:</span> Delivering an interactive music app experience with custom playlists.</p>
+          <p><a href="https://your-blog-link.com" target="_blank">Read More</a></p>
+        </div>
+      </div>
+
+      <!-- More Blogs -->
+      <div class="blog-tab">
+        <div class="tab-header" onclick="toggleBlogContent(this)">
+          <span class="tab-name">📄 More Blog Posts Coming Soon</span>
+          <span class="tab-date">[ Stay Tuned ]</span>
+          <span class="arrow">▶</span>
+        </div>
+        <div class="tab-content">
+          <p>Keep an eye out for exciting updates and stories in my coding journey!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./JS/blog.js"></script>
+</body>
+</html>
