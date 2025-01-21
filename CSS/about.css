@@ -66,6 +66,19 @@ body {
   max-width: 800px;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-me-coding {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .about-me-coding h2 {
+    font-size: 2em; /* Adjust font size for smaller screens */
+  }
+}
+
+
 .about-me-coding h2{
  text-align: center;
   width: 100%;
@@ -82,6 +95,18 @@ body {
   box-shadow: 4px 4px 6px rgba(0, 255, 255, 0.3);
   padding: 20px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .coding-container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .code-block {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+}
+
 
 .coding-container:hover {
   transform: translateY(-10px) scale(1.05); /* Slight scaling and upward movement */

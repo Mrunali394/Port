@@ -74,6 +74,15 @@ body {
   padding: 0 50px;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr; /* Stack items on smaller screens */
+    padding: 0 20px; /* Adjust padding for smaller screens */
+  }
+}
+
+
 /* Skill Card */
 .skill-card {
   background: #0d1a26;

@@ -125,3 +125,29 @@ body {
   transform: scale(1.1);
   box-shadow: 0 0 7px 3px rgba(0, 255, 255, 0.4); /* Slightly increased shadow on hover */
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    margin-left: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .content p {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+  }
+
+  .buttons button {
+    width: 100%; /* Make buttons full width */
+    margin: 5px 0; /* Adjust margin for vertical stacking */
+  }
+
+  .photo-container img {
+    height: 200px; /* Adjust image size for smaller screens */
+    width: 200px; /* Adjust image size for smaller screens */
+  }
+}
