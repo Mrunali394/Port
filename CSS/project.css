@@ -11,54 +11,82 @@ body {
     min-height: 100vh;
   }
 
-  .glass-navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.1); /* Glass effect */
-    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
-    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3); /* Neon glow effect */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
-    z-index: 1000;
-    padding: 10px 0;
-  }
-  
+  /* Glass Navbar */
+.glass-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1); /* Glass effect */
+  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3); /* Neon glow effect */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  z-index: 1000;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #e6f1ff;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: background 0.3s, color 0.3s, text-shadow 0.3s;
+}
+
+.nav-links li a:hover {
+  background: rgba(0, 255, 255, 0.2);
+  color: #00ffff;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+  border: solid 2px aquamarine;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #00ffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .nav-links {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    display: none; /* Initially hide the menu */
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+    border-radius: 0 0 10px 10px;
   }
-  
-  .nav-links li {
-    margin: 0 20px;
+
+  .nav-links.show {
+    display: flex; /* Show the menu when toggled */
   }
-  
-  .def {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #00ffff;
+
+  .hamburger {
+    display: block; /* Show hamburger menu on smaller screens */
   }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: #e6f1ff;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 20px;
-    transition: background 0.3s, color 0.3s, text-shadow 0.3s;
-  }
-  
-  .nav-links li a:hover {
-    background: rgba(0, 255, 255, 0.2); /* Light glass highlight on hover */
-    color: #00ffff; /* Bright neon effect */
-    text-shadow: 0 0 8px rgba(0, 255, 255, 0.8); /* Glowing text */
-    border: solid 2px aquamarine;
-  }
-  
+}
+
   /* Debugger Container */
   .debugger {
     width: 90%;

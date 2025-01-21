@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -151,3 +151,5 @@ body {
     width: 200px; /* Adjust image size for smaller screens */
   }
 }
+
+

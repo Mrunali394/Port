@@ -27,4 +27,10 @@ document.getElementById('toggle-extra').addEventListener('click', () => {
     alert('Thank you for reaching out! Your message has been sent.');
     e.target.reset();
   });
+
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+  }
+  
   

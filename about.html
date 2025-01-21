@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me - Coding Theme</title>
-    <link rel="stylesheet" href="./CSS/about.css" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Me - Coding Theme</title>
+        <link rel="stylesheet" href="./CSS/about.css" />
+    </head>
+    <body>
     <!-- Glass Navbar -->
     <nav class="glass-navbar">
         <ul class="nav-links">
@@ -16,24 +16,29 @@
             <li><a href="./projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- Unicode for hamburger icon -->
+        </div>
+          
     </nav>
 
     <section class="about-me-coding">
         <h2> << Meet Mrunali Patil>></h2>
-        <div class="coding-container">
-            <pre class="code-block">
-                <span class="comment">// About me section </span>
-                <span class="keyword">const</span> aboutMe = <span class="brace">{</span>
-                name: <span class="string">"Mrunali Patil"</span>,
-                role: <span class="string">"Frontend Developer | exploring the backend world |"</span>,
-                description: <span class="string">"I design the pixels you see and now code the logic you don’t. As a frontend developer stepping into the backend world, I’m on a journey to master the full stack of possibilities."</span>,
-                hobbies: <span class="array">["Dancing", "Reading Novels", "Exploring Technologies"]</span>,
-                mission: <span class="string">"To merge my technical skills with meaningful contributions and create amazing projects together."</span>
-                <span class="brace">};</span>
+      <div class="coding-container">
+        <pre class="code-block">
+            <span class="comment">// About me section </span>
+            <span class="keyword">const</span> aboutMe = <span class="brace">{</span>
+            name: <span class="string">"Mrunali Patil"</span>,
+            role: <span class="string">"Frontend Developer | exploring the backend world |"</span>,
+            description: <span class="string">"I design the pixels you see and now code the logic you don’t. As a frontend developer stepping into the backend world, I’m on a journey to master the full stack of possibilities."</span>,
+            hobbies: <span class="array">["Dancing", "Reading Novels", "Exploring Technologies"]</span>,
+            mission: <span class="string">"To merge my technical skills with meaningful contributions and create amazing projects together."</span>
+            <span class="brace">};</span>
 
-                <span class="comment">// Let's connect and build something amazing!</span>
-            </pre>
-        </div>
+            <span class="comment">// Let's connect and build something amazing!</span>
+        </pre>
+      </div>
     </section>
-</body>
+    </body>
 </html>
+

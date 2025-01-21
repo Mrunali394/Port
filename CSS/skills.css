@@ -1,4 +1,3 @@
-/* General Styling */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -6,6 +5,7 @@ body {
   color: cyan;
 }
 
+/* Glass Navbar */
 .glass-navbar {
   position: fixed;
   top: 0;
@@ -17,11 +17,13 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
   z-index: 1000;
   padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-links {
   display: flex;
-  justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -29,12 +31,6 @@ body {
 
 .nav-links li {
   margin: 0 20px;
-}
-
-.def {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #00ffff;
 }
 
 .nav-links li a {
@@ -48,11 +44,43 @@ body {
 }
 
 .nav-links li a:hover {
-  background: rgba(0, 255, 255, 0.2); /* Light glass highlight on hover */
-  color: #00ffff; /* Bright neon effect */
-  text-shadow: 0 0 8px rgba(0, 255, 255, 0.8); /* Glowing text */
+  background: rgba(0, 255, 255, 0.2);
+  color: #00ffff;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
   border: solid 2px aquamarine;
 }
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #00ffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Initially hide the menu */
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+    border-radius: 0 0 10px 10px;
+  }
+
+  .nav-links.show {
+    display: flex; /* Show the menu when toggled */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger menu on smaller screens */
+  }
+}
+
 
 .skills-section {
   text-align: center;
@@ -123,3 +151,4 @@ body {
   line-height: 1.5;
   color: aquamarine;
 }
+

@@ -23,3 +23,9 @@ function draw() {
 }
 
 setInterval(draw, 30);
+
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('show');
+}
+
