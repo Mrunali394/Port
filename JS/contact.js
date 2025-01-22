@@ -1,3 +1,8 @@
+document.getElementById('hamburger').addEventListener('click', () => {
+  const navLinks = document.getElementById('nav-links');
+  navLinks.classList.toggle('show');
+});
+
 const canvas = document.getElementById('matrix');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;

@@ -1,4 +1,9 @@
 // Toggle Project Details
+document.getElementById('hamburger').addEventListener('click', () => {
+  const navLinks = document.getElementById('nav-links');
+  navLinks.classList.toggle('show');
+});
+
 function toggleDetails(header) {
     const details = header.nextElementSibling;
     const arrow = header.querySelector('.arrow');

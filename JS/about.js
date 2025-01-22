@@ -1,4 +1,10 @@
 // Toggle extra content in About Me section
+document.getElementById('hamburger').addEventListener('click', () => {
+  const navLinks = document.getElementById('nav-links');
+  navLinks.classList.toggle('show');
+});
+
+
 document.getElementById('toggle-extra').addEventListener('click', () => {
     const extraContent = document.getElementById('extra-content');
     if (extraContent.classList.contains('hidden')) {
@@ -28,9 +34,5 @@ document.getElementById('toggle-extra').addEventListener('click', () => {
     e.target.reset();
   });
 
-  function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('show');
-  }
-  
+
   
