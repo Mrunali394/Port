@@ -1,7 +1,11 @@
 // Toggle extra content in About Me section
-document.getElementById('hamburger').addEventListener('click', () => {
-  const navLinks = document.getElementById('nav-links');
-  navLinks.classList.toggle('show');
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.nav-links');
+
+hamburgerMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    // Toggle hamburger animation (optional)
+    hamburgerMenu.classList.toggle('open');
 });
 
 

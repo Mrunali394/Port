@@ -8,16 +8,20 @@
 </head>
 <body>
   <!-- Glass Navbar -->
-  
   <nav class="glass-navbar">
+    <div class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <ul class="nav-links">
-        <li class="def"> > </li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="./projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <li class="def"> > </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="./projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-</nav>
+  </nav>
   <div class="blog-page">
     <h1 class="blog-title">My Blog</h1>
     <p class="subtitle">// Sharing insights, experiences, and stories in code...</p>
@@ -64,6 +68,16 @@
       </div>
     </div>
   </div>
+  <script>
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+  
+    hamburgerMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      // Toggle hamburger animation (optional)
+      hamburgerMenu.classList.toggle('open');
+    });
+  </script>
 
   <script src="./JS/blog.js"></script>
 </body>

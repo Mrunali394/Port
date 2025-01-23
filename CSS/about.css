@@ -13,53 +13,64 @@ body {
 
 /* Glass Navbar */
 
-.glass-navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.1); /* Glass effect */
-  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
-  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3); /* Neon glow effect */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
-  z-index: 1000;
-  padding: 10px 0;
+/* Hamburger menu styles */
+.hamburger-menu {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
 }
 
-.nav-links {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.hamburger-menu span {
+  height: 3px;
+  width: 25px;
+  background: #00ffff;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
-.nav-links li {
-  margin: 0 20px;
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.def {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #00ffff;
+@media (max-width: 480px) {
+  .nav-links li {
+    margin: 10px 0;
+  }
 }
 
-.nav-links li a {
-  text-decoration: none;
-  color: #e6f1ff;
-  font-size: 1.2em;
-  font-weight: bold;
-  padding: 10px 15px;
-  border-radius: 20px;
-  transition: background 0.3s, color 0.3s, text-shadow 0.3s;
-}
-
-.nav-links li a:hover {
-  background: rgba(0, 255, 255, 0.2); /* Light glass highlight on hover */
-  color: #00ffff; /* Bright neon effect */
-  text-shadow: 0 0 8px rgba(0, 255, 255, 0.8); /* Glowing text */
-  border: solid 2px aquamarine;
-}
 
 /* About Me Section */
 .about-me-coding {
