@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 body {
   margin: 0;
@@ -175,3 +176,167 @@ body {
   }
 }
 
+=======
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to bottom right, #0a0f23, #00172e); /* Matches the home page */
+    color: #e6f1ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .glass-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3); /* Neon glow effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    z-index: 1000;
+    padding: 10px 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 20px;
+  }
+  
+  .def {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00ffff;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #e6f1ff;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background 0.3s, color 0.3s, text-shadow 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    background: rgba(0, 255, 255, 0.2); /* Light glass highlight on hover */
+    color: #00ffff; /* Bright neon effect */
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.8); /* Glowing text */
+    border: solid 2px aquamarine;
+  }
+  /* About Me Section */
+  .about-me-coding {
+    text-align: left;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-me-coding {
+      width: 90%; /* Adjust width for smaller screens */
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .about-me-coding h2 {
+      font-size: 2em; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  
+  .about-me-coding h2{
+   text-align: center;
+    width: 100%;
+    font-size: 2.5em;
+    color:#ceffff;
+    text-shadow: 1.5px 1.5px 3.5px #507f7f;
+  }
+  
+  /* Code Block */
+  .coding-container {
+    background: #1f2336; /* Code editor-like background */
+    border: 3px solid rgba(0, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 255, 255, 0.3);
+    padding: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .coding-container {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .code-block {
+      font-size: 1em; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  
+  .coding-container:hover {
+    transform: translateY(-10px) scale(1.05); /* Slight scaling and upward movement */
+    box-shadow: 0 10px 15px rgba(0, 255, 255, 0.6); /* Stronger glow on hover */
+    transition:1.5s ;
+  }
+  .code-block {
+    color: #e6f1ff;
+    font-size: 1.3em;
+    line-height: 1.8;
+    white-space: pre-wrap; /* Makes the text wrap */
+    overflow-x: auto; /* Adds horizontal scrolling for long text */
+  }
+  
+  
+  /* Syntax Highlighting */
+  .comment {
+    color: #6c7a89; /* Gray for comments */
+  }
+  
+  .keyword {
+    color: #f92672; /* Pink for keywords like const */
+  }
+  
+  .brace {
+    color: #a6e22e; /* Green for curly braces */
+  }
+  
+  .string {
+    color: #e6db74; /* Yellow for strings */
+  }
+  
+  .array {
+    color: #66d9ef; /* Cyan for arrays */
+  }
+  
+  /* Blinking Cursor Animation */
+  .code-block::after {
+    content: "|";
+    display: inline-block;
+    color: #00ffff;
+    animation: blink 1s infinite;
+  }
+  
+  /* Keyframes for Blinking Cursor */
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+>>>>>>> 7254664 (Initial commit of portfolio files)

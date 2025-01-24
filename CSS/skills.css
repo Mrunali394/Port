@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -136,3 +137,131 @@ body {
   color: aquamarine;
 }
 
+=======
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #171f28;
+    color: cyan;
+  }
+  
+  .glass-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3); /* Neon glow effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    z-index: 1000;
+    padding: 10px 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 20px;
+  }
+  
+  .def {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00ffff;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #e6f1ff;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background 0.3s, color 0.3s, text-shadow 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    background: rgba(0, 255, 255, 0.2); /* Light glass highlight on hover */
+    color: #00ffff; /* Bright neon effect */
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.8); /* Glowing text */
+    border: solid 2px aquamarine;
+  }
+  
+  .skills-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: cyan;
+    text-shadow: 0px 0px 5px rgba(127, 255, 212, 0.8);
+  }
+  
+  /* Skills Container */
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 50px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skills-container {
+      grid-template-columns: 1fr; /* Stack items on smaller screens */
+      padding: 0 20px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  
+  /* Skill Card */
+  .skill-card {
+    background: #0d1a26;
+    border: 1px solid aquamarine;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 255, 255, 0.2);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px rgba(0, 255, 255, 0.5);
+  }
+  
+  /* Card Header */
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card-header i {
+    font-size: 2rem;
+    color: aqua;
+  }
+  
+  .card-header h2 {
+    font-size: 1.5rem;
+    color: cyan;
+  }
+  
+  /* Paragraph Styling */
+  .skill-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: aquamarine;
+  }
+  
+>>>>>>> 7254664 (Initial commit of portfolio files)

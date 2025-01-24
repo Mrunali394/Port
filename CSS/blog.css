@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
   }
 
+<<<<<<< HEAD
   
 /* Hamburger menu styles */
 .hamburger-menu {
@@ -70,6 +71,55 @@ body {
   }
 }
 
+=======
+  .glass-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3); /* Neon glow effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    z-index: 1000;
+    padding: 10px 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 20px;
+  }
+  
+  .def {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00ffff;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #e6f1ff;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background 0.3s, color 0.3s, text-shadow 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    background: rgba(0, 255, 255, 0.2); /* Light glass highlight on hover */
+    color: #00ffff; /* Bright neon effect */
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.8); /* Glowing text */
+    border: solid 2px aquamarine;
+  }
+>>>>>>> 7254664 (Initial commit of portfolio files)
   
   /* Blog Page Container */
   .blog-page {
@@ -148,4 +198,7 @@ body {
     color: #00ffff; /* Cyan links */
     text-decoration: underline;
   }
+<<<<<<< HEAD
   
+=======
+>>>>>>> 7254664 (Initial commit of portfolio files)

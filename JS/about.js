@@ -1,4 +1,5 @@
 // Toggle extra content in About Me section
+<<<<<<< HEAD
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const navLinks = document.querySelector('.nav-links');
 
@@ -9,6 +10,8 @@ hamburgerMenu.addEventListener('click', () => {
 });
 
 
+=======
+>>>>>>> 7254664 (Initial commit of portfolio files)
 document.getElementById('toggle-extra').addEventListener('click', () => {
     const extraContent = document.getElementById('extra-content');
     if (extraContent.classList.contains('hidden')) {
@@ -37,6 +40,9 @@ document.getElementById('toggle-extra').addEventListener('click', () => {
     alert('Thank you for reaching out! Your message has been sent.');
     e.target.reset();
   });
+<<<<<<< HEAD
 
 
   
+=======
+>>>>>>> 7254664 (Initial commit of portfolio files)

@@ -1,4 +1,5 @@
 // Toggle Project Details
+<<<<<<< HEAD
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const navLinks = document.querySelector('.nav-links');
 
@@ -9,6 +10,8 @@ hamburgerMenu.addEventListener('click', () => {
 });
 
 
+=======
+>>>>>>> 7254664 (Initial commit of portfolio files)
 function toggleDetails(header) {
     const details = header.nextElementSibling;
     const arrow = header.querySelector('.arrow');
@@ -20,6 +23,7 @@ function toggleDetails(header) {
       details.style.display = 'block';
       arrow.style.transform = 'rotate(90deg)';
     }
+<<<<<<< HEAD
   }
   
   function toggleMenu() {
@@ -27,3 +31,6 @@ function toggleDetails(header) {
     navLinks.classList.toggle('show');
   }
   
+=======
+  }
+>>>>>>> 7254664 (Initial commit of portfolio files)
