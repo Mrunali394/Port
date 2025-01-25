@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const navLinks = document.querySelector('.nav-links');
-
-hamburgerMenu.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    // Toggle hamburger animation (optional)
-    hamburgerMenu.classList.toggle('open');
-});
-
-=======
->>>>>>> 7254664 (Initial commit of portfolio files)
 const canvas = document.getElementById('matrix');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
@@ -35,12 +23,3 @@ function draw() {
 }
 
 setInterval(draw, 30);
-<<<<<<< HEAD
-
-function toggleMenu() {
-  const navLinks = document.querySelector('.nav-links');
-  navLinks.classList.toggle('show');
-}
-
-=======
->>>>>>> 7254664 (Initial commit of portfolio files)

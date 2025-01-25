@@ -1,153 +1,152 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Courier New', monospace;
-  }
-  
-  body {
-    background-color: #101b27;
-    overflow: hidden;
-    color: #fff;
-  }
-  
-  .background {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-  
-  .gradient-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(120deg, aquamarine, #101b27, cyan);
-    mix-blend-mode: overlay;
-    opacity: 0.8;
-    z-index: 1;
-  }
-  
-  .code-snippet {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    opacity: 0.15;
-    z-index: 2;
-    pointer-events: none;
-  }
-  
-  .code-snippet pre {
-    position: absolute;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', monospace;
+}
+
+body {
+  background-color: #101b27;
+  overflow: hidden;
+  color: #fff;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, aquamarine, #101b27, cyan);
+  mix-blend-mode: overlay;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.code-snippet {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0.15;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.code-snippet pre {
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 2;
+  animation: scroll-code 15s linear infinite;
+}
+
+@keyframes scroll-code {
+  from {
     top: 100%;
-    left: 10%;
-    color: #fff;
-    font-size: 1.2rem;
-    line-height: 2;
-    animation: scroll-code 15s linear infinite;
   }
-  
-  @keyframes scroll-code {
-    from {
-      top: 100%;
-    }
-    to {
-      top: -150%;
-    }
+  to {
+    top: -150%;
   }
-  
-  .content {
-    position: relative;
-    z-index: 3;
-    text-align: center;
-  }
-  
-  .photo-container {
-    margin-bottom: 20px;
-  }
-  
-  .photo-container img {
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    border: 3px solid cyan;
-    box-shadow: 0 0 5px 3px rgba(0, 255, 255, 0.3); /* Reduced box shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .photo-container img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 8px 3px rgba(0, 255, 255, 0.5); /* Slightly increased shadow on hover */
-  }
-  
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+
+.photo-container {
+  margin-bottom: 20px;
+}
+
+.photo-container img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 3px solid cyan;
+  box-shadow: 0 0 5px 3px rgba(0, 255, 255, 0.3); /* Reduced box shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-container img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px 3px rgba(0, 255, 255, 0.5); /* Slightly increased shadow on hover */
+}
+
+.content h1 {
+  font-size: 3rem;
+  color: cyan; /* Bright and vivid */
+  margin-bottom: 10px;
+  margin-left: 50px; /* Slides text slightly to the right */
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.6); /* Increased text brightness */
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: cyan;
+  color: #101b27;
+  border: aquamarine solid 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 0 5px 2px rgba(0, 255, 255, 0.3); /* Reduced box shadow */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.buttons button:hover {
+  background-color: cyan;
+  color: #101b27;
+  transform: scale(1.1);
+  box-shadow: 0 0 7px 3px rgba(0, 255, 255, 0.4); /* Slightly increased shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .content h1 {
-    font-size: 3rem;
-    color: cyan; /* Bright and vivid */
-    margin-bottom: 10px;
-    margin-left: 50px; /* Slides text slightly to the right */
-    text-shadow: 0 0 6px rgba(0, 255, 255, 0.6); /* Increased text brightness */
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    margin-left: 20px; /* Adjust margin for smaller screens */
   }
-  
+
   .content p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1rem; /* Adjust font size for smaller screens */
   }
-  
+
   .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+    flex-direction: column; /* Stack buttons vertically */
   }
-  
+
   .buttons button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: cyan;
-    color: #101b27;
-    border: aquamarine solid 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    box-shadow: 0 0 5px 2px rgba(0, 255, 255, 0.3); /* Reduced box shadow */
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    width: 100%; /* Make buttons full width */
+    margin: 5px 0; /* Adjust margin for vertical stacking */
   }
-  
-  .buttons button:hover {
-    background-color: cyan;
-    color: #101b27;
-    transform: scale(1.1);
-    box-shadow: 0 0 7px 3px rgba(0, 255, 255, 0.4); /* Slightly increased shadow on hover */
+
+  .photo-container img {
+    height: 200px; /* Adjust image size for smaller screens */
+    width: 200px; /* Adjust image size for smaller screens */
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .content h1 {
-      font-size: 2rem; /* Adjust font size for smaller screens */
-      margin-left: 20px; /* Adjust margin for smaller screens */
-    }
-  
-    .content p {
-      font-size: 1rem; /* Adjust font size for smaller screens */
-    }
-  
-    .buttons {
-      flex-direction: column; /* Stack buttons vertically */
-    }
-  
-    .buttons button {
-      width: 100%; /* Make buttons full width */
-      margin: 5px 0; /* Adjust margin for vertical stacking */
-    }
-  
-    .photo-container img {
-      height: 200px; /* Adjust image size for smaller screens */
-      width: 200px; /* Adjust image size for smaller screens */
-    }
-  }
-  
+}

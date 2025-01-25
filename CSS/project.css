@@ -1,249 +1,181 @@
 /* General Styling */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-    background: #0a0f23; /* Coding-theme dark background */
-    color: #00ffff; /* Cyan text */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background: #0a0f23; /* Coding-theme dark background */
+  color: #00ffff; /* Cyan text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-<<<<<<< HEAD
-  /* Glass Navbar */
-  
-/* Hamburger menu styles */
-.hamburger-menu {
-  display: none; /* Hidden by default */
-  flex-direction: column;
+.glass-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1); /* Glass effect */
+  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+  box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3); /* Neon glow effect */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.def {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #00ffff;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #e6f1ff;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: background 0.3s, color 0.3s, text-shadow 0.3s;
+}
+
+.nav-links li a:hover {
+  background: rgba(0, 255, 255, 0.2); /* Light glass highlight on hover */
+  color: #00ffff; /* Bright neon effect */
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.8); /* Glowing text */
+  border: solid 2px aquamarine;
+}
+
+/* Debugger Container */
+.debugger {
+  width: 90%;
+  max-width: 800px;
+  background: #002b36; /* Dark cyan background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5); /* Cyan glow */
+}
+
+.title {
+  text-align: center;
+  color: #7fffd4; /* Aquamarine */
+  margin-bottom: 20px;
+}
+
+/* Project Logs */
+.project-log {
+  border-top: 1px solid #004d61;
+}
+
+.project-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #004d61;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
   cursor: pointer;
   padding: 10px;
+  background: #003543; /* Dark cyan background for headers */
+  color: #00ffff; /* Cyan text for headers */
+  transition: background 0.3s;
 }
 
-.hamburger-menu span {
-  height: 3px;
-  width: 25px;
-  background: #00ffff;
-  margin: 4px 0;
-  border-radius: 2px;
-  transition: all 0.3s ease;
+.project-header:hover {
+  background: #004d61;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .nav-links.active {
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .nav-links li {
-    margin: 15px 0;
-    text-align: center;
-  }
-
-  .hamburger-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.arrow {
+  margin-right: 10px;
+  transition: transform 0.3s;
 }
 
-@media (max-width: 480px) {
-  .nav-links li {
-    margin: 10px 0;
-  }
-}
-
-
-=======
-  .glass-navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.1); /* Glass effect */
-    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
-    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3); /* Neon glow effect */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
-    z-index: 1000;
-    padding: 10px 0;
-  }
-  
-  .nav-links {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nav-links li {
-    margin: 0 20px;
-  }
-  
-  .def {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #00ffff;
-  }
-  
-  .nav-links li a {
-    text-decoration: none;
-    color: #e6f1ff;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 20px;
-    transition: background 0.3s, color 0.3s, text-shadow 0.3s;
-  }
-  
-  .nav-links li a:hover {
-    background: rgba(0, 255, 255, 0.2); /* Light glass highlight on hover */
-    color: #00ffff; /* Bright neon effect */
-    text-shadow: 0 0 8px rgba(0, 255, 255, 0.8); /* Glowing text */
-    border: solid 2px aquamarine;
-  }
-  
->>>>>>> 7254664 (Initial commit of portfolio files)
-  /* Debugger Container */
-  .debugger {
-    width: 90%;
-    max-width: 800px;
-    background: #002b36; /* Dark cyan background */
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.5); /* Cyan glow */
-  }
-  
-  .title {
-    text-align: center;
-    color: #7fffd4; /* Aquamarine */
-    margin-bottom: 20px;
-  }
-  
-  /* Project Logs */
-  .project-log {
-    border-top: 1px solid #004d61;
-  }
-  
-  .project-item {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #004d61;
-  }
-  
-  .project-header {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    padding: 10px;
-    background: #003543; /* Dark cyan background for headers */
-    color: #00ffff; /* Cyan text for headers */
-    transition: background 0.3s;
-  }
-  
-  .project-header:hover {
-    background: #004d61;
-  }
-  
-  .arrow {
-    margin-right: 10px;
-    transition: transform 0.3s;
-  }
-  
-  .project-name {
-    font-weight: bold;
-  }
-  
-  .project-details {
-    display: none;
-    padding: 10px;
-    background: #001f26; /* Slightly darker background */
-    color: #7fffd4; /* Aquamarine text for details */
-  }
-  
-  .key {
-    color: #00ffff; /* Cyan for keys */
-    font-weight: bold;
-  }
-  
-  a {
-    color: #00ffff; /* Cyan links */
-    text-decoration: underline;
-  }
-  
-  .loading {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #00ffff;
-  }
-  
-  .spinner {
-    width: 15px;
-    height: 15px;
-    border: 2px solid transparent;
-    border-top: 2px solid #00ffff;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-  }
-  
-  /* Links Styling */
-.link-btn {
-  text-decoration: none;
-  color: #0a0f23;
-  background: #00ffff;
-  padding: 8px 15px;
-  border-radius: 5px;
-  margin: 5px;
+.project-name {
   font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0, 255, 255, 0.4);
-  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.project-details {
+  display: none;
+  padding: 10px;
+  background: #001f26; /* Slightly darker background */
+  color: #7fffd4; /* Aquamarine text for details */
+}
+
+.key {
+  color: #00ffff; /* Cyan for keys */
+  font-weight: bold;
+}
+
+a {
+  color: #00ffff; /* Cyan links */
+  text-decoration: underline;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #00ffff;
+}
+
+.spinner {
+  width: 15px;
+  height: 15px;
+  border: 2px solid transparent;
+  border-top: 2px solid #00ffff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Links Styling */
+.link-btn {
+text-decoration: none;
+color: #0a0f23;
+background: #00ffff;
+padding: 8px 15px;
+border-radius: 5px;
+margin: 5px;
+font-weight: bold;
+box-shadow: 0 2px 5px rgba(0, 255, 255, 0.4);
+transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .link-btn:hover {
-  background: #7fffd4;
-  transform: translateY(-2px);
+background: #7fffd4;
+transform: translateY(-2px);
 }
 
 .live-link {
-  background: #7fffd4;
-  color: #001f26;
+background: #7fffd4;
+color: #001f26;
 }
 
 .github-link {
-  background: #00cccc;
-  color: #001f26;
+background: #00cccc;
+color: #001f26;
 }
 
 .disabled {
-  pointer-events: none;
-  opacity: 0.6;
+pointer-events: none;
+opacity: 0.6;
 }
 
-  @keyframes spin {
-    to {
-      transform: rotate(360deg);
-    }
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
-<<<<<<< HEAD
-  
-=======
->>>>>>> 7254664 (Initial commit of portfolio files)
+}
