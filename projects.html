@@ -9,11 +9,16 @@
   <body>
     <!-- Glass Navbar -->
     <nav class="glass-navbar">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul class="nav-links">
-        <li class="def"> > </li>
+        <li class="def">></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="skills.html">Skills</a></li>
-        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -55,29 +60,18 @@
         <div class="project-item">
           <div class="project-header" onclick="toggleDetails(this)">
             <span class="arrow">▶</span>
-            <span class="project-name">Music App</span>
+            <span class="project-name">Age Calculator</span>
           </div>
           <div class="project-details">
-            <p><span class="key">Name:</span> Music web</p>
+            <p><span class="key">Name:</span> Age Calculator</p>
             <p><span class="key">Status:</span> Completed</p>
             <p>
-              <span class="key">Description:</span> A sleek, functinal, simple web for exploring
-              music.
+              <span class="key">Description:</span>A functional calculator where the accurate age can be calculated.
             </p>
             <p>
               <span class="key">Links:</span>
-              <a
-                href="https://your-music-app-live-link.com"
-                target="_blank"
-                class="link-btn live-link"
-                >Go Live</a
-              >
-              <a
-                href="https://github.com/your-music-app-repo"
-                target="_blank"
-                class="link-btn github-link"
-                >Explore Repo</a
-              >
+              <a href="https://agecalc-nine.vercel.app/" target="_blank" class="link-btn live-link">Go Live</a>
+              <a href="https://github.com/Mrunali394/agecalc" target="_blank" class="link-btn github-link">Explore Repo</a>
             </p>
           </div>
         </div>
@@ -100,5 +94,7 @@
     </div>
 
     <script src="./JS/project.js"></script>
+    <script src="./JS/navbar.js"></script>
+
   </body>
 </html>

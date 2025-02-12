@@ -8,45 +8,93 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+
+  <canvas id="matrix"></canvas>
+
   <!-- Glass Navbar -->
   <nav class="glass-navbar">
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <ul class="nav-links">
-        <li class="def"> > </li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="./projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <li class="def">></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <canvas id="matrix"></canvas>
-  <div class="container">
-    <!-- Left Section -->
-    <div class="left-section">
-      <h1 class="headline">
-        Let's build <br> something amazing together 🚀
-      </h1>
-      <div class="social-icons">
-        <a href="https://github.com/Mrunali394" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/mrunali-patil-89a424320" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-        <a href="https://x.com/Mrunali394?s=09" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-        <a href="https://discord.com" target="_blank" class="social-icon"><i class="fab fa-discord"></i></a>
+
+  <main class="contact-container">
+    <!-- Contact Content Wrapper -->
+    <div class="contact-wrapper">
+      <!-- Left Section -->
+      <div class="contact-info">
+        <h1 class="glitch-text">Let's build something amazing together 🚀</h1>
+        <p class="contact-subtitle">Connect with me on social media</p>
+        <div class="social-links">
+          <a href="https://github.com/Mrunali394" target="_blank" class="social-btn">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/mrunali-patil-89a424320" target="_blank" class="social-btn">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://x.com/Mrunali394?s=09" target="_blank" class="social-btn">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+          </a>
+          <a href="https://discord.com" target="_blank" class="social-btn">
+            <i class="fab fa-discord"></i>
+            <span>Discord</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="terminal-container">
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="terminal-title">Contact Terminal</div>
+          </div>
+          <div class="terminal-body">
+            <div class="output" id="output"></div>
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">> Enter your name:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">> Enter your email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">> Write your message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              
+              <button type="submit" class="send-btn">
+                <span class="btn-text">Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
+  </main>
 
-    <!-- Right Section -->
-    <div class="right-section">
-      <form class="contact-form" action="mailto:mrunalipatil394@gmail.com" method="post" enctype="text/plain">
-        <h2>[ Contact Terminal ]</h2>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
-        <button type="submit" class="send-btn">Send Message</button>
-      </form>
-    </div>
-  </div>
   <script src="./JS/contact.js"></script>
+  <script src="./JS/navbar.js"></script>
 </body>
 </html>
