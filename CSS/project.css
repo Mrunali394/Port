@@ -282,3 +282,156 @@ opacity: 0.6;
   }
 }
 
+/* Add these responsive styles at the end of your CSS file */
+
+/* For tablets and medium screens */
+@media screen and (max-width: 1024px) {
+    .debugger {
+        width: 95%;
+        margin: 80px auto 20px;
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .project-header {
+        padding: 8px;
+    }
+
+    .project-name {
+        font-size: 1.1rem;
+    }
+
+    .link-btn {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* For mobile phones */
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+
+    .debugger {
+        width: 100%;
+        margin: 60px auto 10px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .project-item {
+        margin-bottom: 10px;
+    }
+
+    .project-header {
+        padding: 8px;
+    }
+
+    .project-name {
+        font-size: 1rem;
+    }
+
+    .project-details {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .key {
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    .link-btn {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+        text-align: center;
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+/* For very small mobile devices */
+@media screen and (max-width: 480px) {
+    .debugger {
+        margin-top: 50px;
+        padding: 8px;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .project-header {
+        padding: 6px;
+    }
+
+    .project-name {
+        font-size: 0.9rem;
+    }
+
+    .project-details {
+        padding: 6px;
+        font-size: 0.85rem;
+    }
+
+    .loading {
+        font-size: 0.85rem;
+    }
+
+    .spinner {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* For landscape orientation on mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    body {
+        padding-top: 40px;
+    }
+
+    .debugger {
+        margin-top: 45px;
+    }
+
+    .project-details {
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+
+    .link-btn {
+        display: inline-block;
+        width: auto;
+        margin: 5px;
+    }
+}
+
+/* Enhance scrollbar for project details */
+.project-details::-webkit-scrollbar {
+    width: 5px;
+}
+
+.project-details::-webkit-scrollbar-track {
+    background: rgba(0, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.project-details::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.project-details::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 255, 255, 0.5);
+}
+
